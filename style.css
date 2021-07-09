@@ -1,0 +1,300 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: white;
+    list-style: none;
+}
+
+.main__poster {
+    background-image: url('https://cdn.tgdd.vn/2021/06/campaign/BG-1920x500-1.jpg');
+    background-position: center center;
+    background-size: cover;
+    max-height: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 20px 110px;
+    position: relative;
+}
+
+
+.main__poster__info {
+    width: 45%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.main__poster__info > * {
+    margin-top: 10px;
+}
+
+.main__poster__info > img {
+    max-width: 100%;
+    width: 100%;
+}
+
+.main__poster > img {
+    width: 100%;
+    max-width: 400px;
+    margin-right: 10px;
+}
+
+.main__poster__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.main__poster__button1 h1, .main__poster__button2 h1 {
+    font-size: 20px;
+}
+
+.main__poster__button1, .main__poster__button2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 7px;
+    cursor: pointer;
+}
+
+.main__poster__button1 {
+    background: linear-gradient(180deg, #F38F31 0%, #F06D30 100%);
+    border-radius: 4px;
+}
+
+.main__poster__button2 {
+    margin-left: 5px;
+    background: linear-gradient(180deg, #146DD5 0%, #0F60BE 100%);
+    border-radius: 4px;
+}
+
+.main__poster__contact {
+    background: rgba(0, 0, 0, 0.34);
+    border-radius: 4px;
+    padding: 15px;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content:center;
+    width: 100%;
+}
+
+.main__poster__contact a {
+    cursor: pointer;
+    color: #FFDF6F;
+}
+
+.main__poster__contact .button {
+    font-size: 12px;
+    background: linear-gradient(180deg, #4B68BA 0%, #3A56A1 100%);
+    margin-right: 4px;
+    width: 49px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2px;
+}
+
+.rows {
+    width: 100%;
+}
+
+.row {
+    height: 100%;
+    max-height: 450px;
+    position: relative;
+}
+
+.row__right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.row__left {
+    display: flex;
+    align-items: center;
+}
+
+.row__right > img, .row__left > img {
+    position: absolute;
+    top: 0;
+    left: -20%;
+    bottom: 0;
+    z-index: -1;
+    right: 0;
+}
+
+.row__right .row__content {
+    width: 100%;
+    max-width: 550px;
+    margin-right: 5%;
+    padding: 15px;
+}
+
+.row__left .row__content {
+    width: 100%;
+    max-width: 550px;
+    margin-left: 5%;
+    padding: 15px;
+}
+
+.row__content h1 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 42px;
+}
+
+.row__content p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.bar {
+    background-color: #2D2D2D;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.bar ul {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    justify-content: space-evenly;
+}
+
+.bar__price__section {
+    display: flex;
+    align-items: center;
+}
+
+.price__tag {
+    margin-right: 20px;
+} 
+
+.price__tag__value {
+    color: red;
+    font-weight: 500;
+}
+
+.bar__price__section .button1, .bar__price__section .button2 {
+    padding: 10px 12px;
+    margin-right: 5px;
+    border-radius: 4px;
+    outline: none;
+    font-weight: 700;
+    border: 0;
+    cursor: pointer;
+}
+
+.button1 {
+    background: linear-gradient(180deg, #F38F31 0%, #F06D30 100%);
+}
+
+.button2 {
+    background: linear-gradient(180deg, #288AD6 0%, #288AD6 100%);
+}
+
+
+.bar__price__section .button1:hover, .bar__price__section .button2:hover,
+.info__button_1:hover, .info__button_2:hover {
+    filter: brightness(120%);
+    color: black;
+}
+
+@media screen and (max-width: 550px){
+    .main__poster {
+        max-height: 100%;
+        background-image: url('./images/Pre\ Garmin\ mobile\ 1\ \(2\).jpg');
+    }
+
+    .main__poster__info > img, .main__poster > img {
+        display: none;
+    }
+
+    .main__poster__info {
+        max-width: 100%;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: -20%;
+    }
+
+    .rows {
+        width: 100%;
+        margin-top: 24%;
+    }
+
+    .row__right, .row__left {
+        display: initial;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .bar {
+        display: none;
+    }
+
+    
+    .row__right > img {
+        position: relative;
+        height: 550px;
+        width: 100%;
+        top: 0; left: 0;
+        bottom: 0; right: 0;
+        object-fit: cover;
+        object-position: 10% center;
+
+    }
+
+    .row__left > img {
+        position: relative;
+        height: 550px;
+        width: 100%;
+        top: 0; left: 0;
+        bottom: 0; right: 0;
+        object-fit: cover;
+        object-position: 60% center;
+    }
+
+    .row__content {
+        margin: 0 !important;
+    }
+
+    .row__content__1 {
+        background-color: #699FB4;
+    }
+
+    .row__content__2 {
+        background-color: #393F3F;
+    }
+
+    .row__content__3 {
+        background-color: #6E6453;
+    }
+
+    .row__content__4 {
+        background-color: #CCB498;
+    }
+
+    .row__content__5 {
+        background-color: #1D2226;
+    }
+
+    .row__content__6 {
+        background-color: #4A5050;
+    }
+}
